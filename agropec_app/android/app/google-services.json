@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199912080287",
+    "project_id": "agropecapp-c6b8e",
+    "storage_bucket": "agropecapp-c6b8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199912080287:android:7081fc203645330afb33aa",
+        "android_client_info": {
+          "package_name": "com.agropec_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199912080287-28ismssctobeg5juf0c5ui146nec4833.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJGl1OkUXH35gcEhRRNWXXWq4WFgehTsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199912080287-28ismssctobeg5juf0c5ui146nec4833.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
