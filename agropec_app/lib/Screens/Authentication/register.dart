@@ -2,6 +2,9 @@ import 'package:agropec_app/Services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatefulWidget {
+  final Function toggleView;
+
+  Register({this.toggleView});
   @override
   _RegisterState createState() => _RegisterState();
 }
@@ -18,7 +21,16 @@ class _RegisterState extends State<Register> {
       backgroundColor: Colors.green[900],
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('Sign In Page'),
+        title: Text('Register Page'),
+        actions: [
+          FlatButton.icon(
+            onPressed: () {
+              widget.toggleView();
+            },
+            icon: Icon(Icons.person),
+            label: Text('Sign In'),
+          )
+        ],
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),

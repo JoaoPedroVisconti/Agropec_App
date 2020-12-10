@@ -1,12 +1,16 @@
 import 'package:agropec_app/services/auth.dart';
 import 'package:flutter/material.dart';
 
-class SingIn extends StatefulWidget {
+class SignIn extends StatefulWidget {
+  final Function toggleView;
+
+  SignIn({this.toggleView});
+
   @override
-  _SingInState createState() => _SingInState();
+  _SignInState createState() => _SignInState();
 }
 
-class _SingInState extends State<SingIn> {
+class _SignInState extends State<SignIn> {
   final AuthService _auth = AuthService();
 
   String email = "";
@@ -19,6 +23,15 @@ class _SingInState extends State<SingIn> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text('Sign In Page'),
+        actions: [
+          FlatButton.icon(
+            onPressed: () {
+              widget.toggleView();
+            },
+            icon: Icon(Icons.person),
+            label: Text('Register'),
+          )
+        ],
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
