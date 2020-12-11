@@ -22,7 +22,7 @@ Color greenMid = Color(0xFF33c58e);
 Color greenEnd = Color(0xFF63fd88);
 
 TextStyle loginTitleStyle = TextStyle(
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'SourceSansPro',
   // fontWeight: FontWeight.bold,
   color: greenDark,
   fontSize: 50,

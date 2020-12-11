@@ -84,15 +84,49 @@ class _LoginState extends State<Login> {
                   children: [
                     SizedBox(height: 40),
                     TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Email',
+                        fillColor: Colors.white,
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.white,
+                            width: 2,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.blue,
+                            width: 2,
+                          ),
+                        ),
+                      ),
                       validator: (val) => val.isEmpty ? 'Enter an Email' : null,
                       onChanged: (val) {
                         setState(() {
-                          email = val;
+                          email = val.trim();
                         });
                       },
                     ),
                     SizedBox(height: 20),
                     TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Password',
+                        fillColor: Colors.white,
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.white,
+                            width: 2,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.blue,
+                            width: 2,
+                          ),
+                        ),
+                      ),
                       validator: (val) => val.length < 6
                           ? 'Enter a Password 6+ Chars Long'
                           : null,

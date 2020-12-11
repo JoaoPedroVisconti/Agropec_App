@@ -70,6 +70,11 @@ flutter:
     - family: TitilliumWeb
       fonts:
         - asset: fonts/TitilliumWeb-Bold.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Bold.ttf
+          weight: 700
+        - asset: fonts/SourceSansPro-BoldItalic.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
