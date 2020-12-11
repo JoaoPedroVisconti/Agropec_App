@@ -1,4 +1,4 @@
-import 'package:agropec_app/Screens/Authentication/sign_in.dart';
+import 'package:agropec_app/Screens/Authentication/login.dart';
 import 'package:agropec_app/Screens/Authentication/register.dart';
 import 'package:flutter/material.dart';
 
@@ -8,18 +8,18 @@ class Authenticate extends StatefulWidget {
 }
 
 class _AuthenticateState extends State<Authenticate> {
-  bool showSignIn = false;
+  bool showLogin = true;
 
   void toggleView() {
     setState(() {
-      showSignIn = !showSignIn;
+      showLogin = !showLogin;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    if (showSignIn) {
-      return SignIn(toggleView: toggleView);
+    if (showLogin) {
+      return Login(toggleView: toggleView);
     } else {
       return Register(toggleView: toggleView);
     }
